@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTraning"
+        xmlns:Collections="clr-namespace:System.Collections;assembly=mscorlib" x:Class="WPFTraning.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="215*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="AddButton" Content="Add" Margin="98,274,563,99" Click="AddButton_Click" Grid.Row="1"/>
+        <Button x:Name="DeleteButton" Content="Delete" Margin="283,274,374,99" Click="DeleteButton_Click" Grid.Row="1"/>
+        <Button x:Name="ClearButton" Content="Clear" Margin="477,274,176,99" Click="ClearButton_Click" Grid.Row="1"/>
+        <ListView x:Name="lw" Margin="178,59,204,215" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
